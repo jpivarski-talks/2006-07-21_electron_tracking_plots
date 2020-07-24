@@ -1,0 +1,20 @@
+\frametitle {What units is the vertex in, anyway?}
+\begin{minipage}{\linewidth}
+\scriptsize
+\begin{verbatim}
+module VtxSmeared = VertexGenerator {
+    string type = "IOMC/EventVertexGenerators/GaussianEventVertexGenerator"
+    double SigmaX = 0.015
+    double SigmaY = 0.015
+    double SigmaZ = 53.0  // in mm (as in COBRA/OSCAR)
+}
+\end{verbatim}
+\end{minipage}
+
+\vspace{0.5 cm} \hspace{-0.8 cm}
+Output of HepMC::GenParticle::CreationVertex().z():
+
+\vspace{-0.3 cm}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{mcz}
+\end{center}
